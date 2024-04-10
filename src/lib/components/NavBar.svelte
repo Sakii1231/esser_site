@@ -6,7 +6,7 @@
     }
   </script>
   
-  <nav class="bg-white shadow-md py-4 px-6 flex justify-between items-center">
+  <nav class="bg-white shadow-md py-4 px-6 flex justify-between items-center ">
     <div class="text-3xl font-poppins font-[400]">ThatNepaliMUA</div>
     <div class="flex items-center md:hidden">
       <button
@@ -31,12 +31,10 @@
     </div>
     <ul class="hidden md:flex space-x-6">
       <li><a href="#" class="text-gray-700 text-xl font-poppins font-[200] hover:text-gray-900">Work</a></li>
-      <li><a href="#" class="text-gray-700 text-xl font-poppins font-[200] hover:text-gray-900">Press</a></li>
       <li><a href="#" class="text-gray-700 text-xl font-poppins font-[200] hover:text-gray-900">About</a></li>
       <li><a href="#" class="text-gray-700 text-xl font-poppins font-[200] hover:text-gray-900">Contact</a></li>
       <li>
         <a href="#" class="text-gray-700 text-xl hover:text-gray-900">
-          <i class="fab fa-instagram" />
         </a>
       </li>
     </ul>
@@ -46,12 +44,10 @@
     <div class="md:hidden">
       <ul class="bg-white shadow-md py-4 px-6 space-y-4">
         <li><a href="#" class="text-gray-700 text-xl font-poppins font-[200] hover:text-gray-900 block">Work</a></li>
-        <li><a href="#" class="text-gray-700 text-xl font-poppins font-[200] hover:text-gray-900 block">Press</a></li>
         <li><a href="#" class="text-gray-700 text-xl font-poppins font-[200] hover:text-gray-900 block">About</a></li>
         <li><a href="#" class="text-gray-700 text-xl font-poppins font-[200] hover:text-gray-900 block">Contact</a></li>
         <li>
           <a href="#" class="text-gray-700 hover:text-gray-900 block">
-            <i class="fab fa-instagram" />
           </a>
         </li>
       </ul>

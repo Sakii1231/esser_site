@@ -1,6 +1,6 @@
 <script lang="ts">
   import img1 from '$lib/images/IMG_0317.webp';
-  import img2 from '$lib/images/HEROIMAGE.png';
+  import img2 from '$lib/images/HEROIMAGE.webp';
   console.log("running")
   const imageModules = import.meta.glob("../../static/beauty/*.webp");
   console.log("running2")
