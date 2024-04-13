@@ -7,7 +7,10 @@
   </script>
   
   <nav class="bg-white shadow-md py-4 px-6 flex justify-between items-center ">
-    <div class="text-3xl font-poppins font-[400]">ThatNepaliMUA</div>
+    <ul class="md:flex space-x-6">
+      <li><a href="/" class="text-3xl font-poppins font-[400]">ThatNepaliMUA</a></li>
+    </ul>
+    
     <div class="flex items-center md:hidden">
       <button
         class="text-gray-700 hover:text-gray-900 focus:outline-none"
@@ -30,9 +33,9 @@
       </button>
     </div>
     <ul class="hidden md:flex space-x-6">
-      <li><a href="#" class="text-gray-700 text-xl font-poppins font-[200] hover:text-gray-900">Work</a></li>
+      <li><a href="work" class="text-gray-700 text-xl font-poppins font-[200] hover:text-gray-900">Work</a></li>
       <li><a href="#" class="text-gray-700 text-xl font-poppins font-[200] hover:text-gray-900">About</a></li>
-      <li><a href="#" class="text-gray-700 text-xl font-poppins font-[200] hover:text-gray-900">Contact</a></li>
+      <li><a href="contact" class="text-gray-700 text-xl font-poppins font-[200] hover:text-gray-900">Contact</a></li>
       <li>
         <a href="#" class="text-gray-700 text-xl hover:text-gray-900">
         </a>
@@ -43,9 +46,9 @@
   {#if showMenu}
     <div class="md:hidden">
       <ul class="bg-white shadow-md py-4 px-6 space-y-4">
-        <li><a href="#" class="text-gray-700 text-xl font-poppins font-[200] hover:text-gray-900 block">Work</a></li>
+        <li><a href="work" class="text-gray-700 text-xl font-poppins font-[200] hover:text-gray-900 block">Work</a></li>
         <li><a href="#" class="text-gray-700 text-xl font-poppins font-[200] hover:text-gray-900 block">About</a></li>
-        <li><a href="#" class="text-gray-700 text-xl font-poppins font-[200] hover:text-gray-900 block">Contact</a></li>
+        <li><a href="contact" class="text-gray-700 text-xl font-poppins font-[200] hover:text-gray-900 block">Contact</a></li>
         <li>
           <a href="#" class="text-gray-700 hover:text-gray-900 block">
           </a>
