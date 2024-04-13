@@ -7,6 +7,6 @@
 
 <div in:fly={{ duration: 300, x: 500, y: 0, opacity: 0.3, easing: quintOut }} class="grid grid-cols-1 sm:grid-cols-3 gap-4 grid-flow-dense m-4">
     {#each images2 as image}
-      <img loading="lazy" fetchpriority="high" decoding="async" src={`img/beauty/${image}`} alt="Beauty" class="w-full h-auto" />
+      <img loading="lazy" fetchpriority="high" decoding="async" src={`work/img/beauty/${image}`} alt="Beauty" class="w-full h-auto" />
     {/each}
 </div>
