@@ -5,6 +5,7 @@
     import { fly } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
     import img from '$lib/images/Untitled-3.jpg';
+    import { PUBLIC_WEB_FORM_API } from '$env/static/public'
   </script>
 
 
@@ -12,7 +13,7 @@
     <div class="flex w-full max-w-sm flex-col gap-1.5 m-8">
         <div class="m-4" in:fly={{ duration: 300, x: -500, y: 0, opacity: 0.3, easing: quintOut }}>
             <form action="https://api.web3forms.com/submit" method="POST" class="">
-                <input type="hidden" name="access_key" value="3a223ac4-d7ab-481a-aee1-029a95e9e510">
+                <input type="hidden" name="access_key" value={PUBLIC_WEB_FORM_API}>
                 <Label for="name">Name</Label>
                 <Input type="text" id="name" name="name" required placeholder="Your name" />
                 <Label for="email-2">Email</Label>
