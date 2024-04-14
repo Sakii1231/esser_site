@@ -1,12 +1,118 @@
 <script>
   import { fly } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
-  let images2=['IMG_3137.webp', 'IMG_0317.webp', 'IMG_4146.webp', 'IMG_2842.webp', 'IMG_2855.webp', 'IMG_3682.webp', 'IMG_2699.webp', 'IMG_2146.webp', 'IMG_7052.webp', 'IMG_0331.webp', 'IMG_3606 2.webp', 'IMG_3617.webp', 'IMG_0320.webp', 'IMG_0319.webp', 'IMG_0327.webp', 'IMG_3136.webp', 'IMG_2698.webp', 'IMG_3112.webp', 'IMG_0330.webp', 'IMG_0328.webp', 'IMG_0323.webp', 'IMG_2854.webp', 'IMG_2857.webp', 'IMG_2697.webp', 'IMG_E2149.webp', 'IMG_0324.webp', 'IMG_0326.webp', 'IMG_5648.webp', 'IMG_2843.webp', 'IMG_3092.webp', 'IMG_2151.webp', 'IMG_0322.webp', 'IMG_0325.webp', 'IMG_3138.webp', 'IMG_0318.webp', 'IMG_2152.webp', 'IMG_3618.webp', 'IMG_2844.webp', 'IMG_0321.webp', 'IMG_2841.webp', 'IMG_2150.webp', 'IMG_2148.webp', 'IMG_3494.webp', 'IMG_03290.webp', 'IMG_5079.webp', 'IMG_2147.webp']
+  function shuffle(list) {
+  for (let i = list.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [list[i], list[j]] = [list[j], list[i]];
+  }
+  return list;
+}
+  let images2=['IMG_3097.webp',
+ 'IMG_E7935.webp',
+ 'IMG_8322.webp',
+ 'IMG_4875.webp',
+ 'IMG_E2857.webp',
+ 'IMG_5664.webp',
+ 'IMG_6553.webp',
+ 'IMG_E8795.webp',
+ 'IMG_5140.webp',
+ 'IMG_5663.webp',
+ 'IMG_4896.webp',
+ 'IMG_8653.webp',
+ 'IMG_4876.webp',
+ 'IMG_7238.webp',
+ 'IMG_6404.webp',
+ 'IMG_6803.webp',
+ 'IMG_E8792.webp',
+ 'IMG_3494.webp',
+ 'IMG_6106.webp',
+ 'IMG_1397.webp',
+ 'IMG_5141.webp',
+ 'IMG_5659.webp',
+ 'IMG_8570.webp',
+ 'IMG_6800.webp',
+ 'IMG_6797.webp',
+ 'IMG_8572.webp',
+ 'IMG_E7968.webp',
+ 'IMG_3096.webp',
+ 'IMG_6798.webp',
+ 'IMG_E8796.webp',
+ 'IMG_E4177.webp',
+ 'IMG_E8793.webp',
+ 'IMG_9409.webp',
+ 'IMG_E8794.webp',
+ 'IMG_9731.webp',
+ 'IMG_3027.webp',
+ 'IMG_6330.webp',
+ 'IMG_3446.webp',
+ 'IMG_3444.webp',
+ 'IMG_6796.webp',
+ 'IMG_6059.webp',
+ 'IMG_3443.webp',
+ 'IMG_6795.webp',
+ 'IMG_E8791.webp',
+ 'IMG_8330.webp',
+ 'IMG_6405.webp',
+ 'IMG_3028.webp',
+ 'IMG_E1935.webp',
+ 'IMG_9411.webp',
+ 'IMG_5494.webp',
+ 'IMG_6044.webp',
+ 'IMG_1705.webp',
+ 'IMG_6058.webp',
+ 'IMG_4170.webp',
+ 'IMG_1501.webp',
+ 'IMG_9410.webp',
+ 'IMG_E7908.webp',
+ 'IMG_8652.webp',
+ 'IMG_6794.webp',
+ 'IMG_3442.webp',
+ 'IMG_9412.webp',
+ 'IMG_3098.webp',
+ 'IMG_E8797.webp',
+ 'IMG_6801.webp',
+ 'IMG_4883.webp',
+ 'IMG_6329.webp',
+ 'IMG_1396.webp',
+ 'IMG_E7966.webp',
+ 'IMG_E7907.webp',
+ 'IMG_8036.webp',
+ 'IMG_3029.webp',
+ 'IMG_8651.webp',
+ 'IMG_3511.webp',
+ 'IMG_5117.webp',
+ 'IMG_1959.webp',
+ 'IMG_E4179.webp',
+ 'IMG_1497.webp',
+ 'IMG_E8790.webp',
+ 'IMG_6804.webp',
+ 'IMG_8650.webp',
+ 'IMG_1936.webp',
+ 'IMG_6403.webp',
+ 'IMG_3512.webp',
+ 'IMG_8571.webp',
+ 'IMG_3445.webp',
+ 'IMG_E4176.webp',
+ 'IMG_6055.webp',
+ 'IMG_3634.webp',
+ 'IMG_E7936.webp',
+ 'IMG_E5493.webp',
+ 'IMG_3633.webp',
+ 'whoisesaar fashion.webp',
+ 'IMG_6802.webp',
+ 'IMG_E7967.webp',
+ 'IMG_3880.webp',
+ 'IMG_4567.webp',
+ 'IMG_4877.webp',
+ 'IMG_7096.webp',
+ 'IMG_6799.webp']
+  const shuffledArray = shuffle(images2);
 
 </script>
 
 <div in:fly={{ duration: 300, x: 500, y: 0, opacity: 0.3, easing: quintOut }} class="grid grid-cols-1 sm:grid-cols-3 gap-4 grid-flow-dense m-4">
-    {#each images2 as image}
-      <img loading="lazy" fetchpriority="high" decoding="async" src={`work/img/beauty/${image}`} alt="Beauty" class="w-full h-auto" />
+    {#each shuffledArray as image}
+      <img loading="lazy" fetchpriority="high" decoding="async" src={`work/img/fashion/${image}`} alt="bride" class="w-full h-auto" />
     {/each}
 </div>

@@ -25,8 +25,8 @@
   <div class="relative h-96">
     <div class="absolute inset-0 z-10 transition-transform transform-gpu scale-100 hover:scale-105">
       <div in:fly={{ delay:200, duration: 300, x: -80, y: 0, opacity: 0, easing: quintOut }}>
-        <a href="https://example.com">
-          <img loading="lazy" fetchpriority="high" decoding="async" src={img2} alt="Beauty" class="w-full h-auto rounded-lg shadow-lg" />
+        <a href="bridal">
+          <img loading="lazy" fetchpriority="high" decoding="async" src={img2} alt="bridal" class="w-full h-auto rounded-lg shadow-lg" />
         </a>
       </div>
     </div>
@@ -35,8 +35,8 @@
   <div class="relative h-96">
     <div class="absolute inset-0 z-10 transition-transform transform-gpu scale-100 hover:scale-105">
       <div in:fly={{ delay:300, duration: 300, x: -60, y: 0, opacity: 0, easing: quintOut }}>
-        <a href="https://example.com">
-          <img loading="lazy" fetchpriority="high" decoding="async" src={img3} alt="Beauty" class="w-full h-auto rounded-lg shadow-lg" />
+        <a href="fantasy">
+          <img loading="lazy" fetchpriority="high" decoding="async" src={img3} alt="fantasy" class="w-full h-auto rounded-lg shadow-lg" />
         </a>
       </div>
     </div>
@@ -45,8 +45,8 @@
   <div class="relative h-96">
     <div class="absolute inset-0 z-10 transition-transform transform-gpu scale-100 hover:scale-105">
       <div in:fly={{ delay:400, duration: 300, x: -40, y: 0, opacity: 0, easing: quintOut }}>
-        <a href="https://example.com">
-          <img loading="lazy" fetchpriority="high" decoding="async" src={img4} alt="Beauty" class="w-full h-auto rounded-lg shadow-lg" />
+        <a href="fashion">
+          <img loading="lazy" fetchpriority="high" decoding="async" src={img4} alt="fashion" class="w-full h-auto rounded-lg shadow-lg" />
         </a>
       </div>
     </div>

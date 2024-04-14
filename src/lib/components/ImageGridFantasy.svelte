@@ -1,12 +1,39 @@
 <script>
   import { fly } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
-  let images2=['IMG_3137.webp', 'IMG_0317.webp', 'IMG_4146.webp', 'IMG_2842.webp', 'IMG_2855.webp', 'IMG_3682.webp', 'IMG_2699.webp', 'IMG_2146.webp', 'IMG_7052.webp', 'IMG_0331.webp', 'IMG_3606 2.webp', 'IMG_3617.webp', 'IMG_0320.webp', 'IMG_0319.webp', 'IMG_0327.webp', 'IMG_3136.webp', 'IMG_2698.webp', 'IMG_3112.webp', 'IMG_0330.webp', 'IMG_0328.webp', 'IMG_0323.webp', 'IMG_2854.webp', 'IMG_2857.webp', 'IMG_2697.webp', 'IMG_E2149.webp', 'IMG_0324.webp', 'IMG_0326.webp', 'IMG_5648.webp', 'IMG_2843.webp', 'IMG_3092.webp', 'IMG_2151.webp', 'IMG_0322.webp', 'IMG_0325.webp', 'IMG_3138.webp', 'IMG_0318.webp', 'IMG_2152.webp', 'IMG_3618.webp', 'IMG_2844.webp', 'IMG_0321.webp', 'IMG_2841.webp', 'IMG_2150.webp', 'IMG_2148.webp', 'IMG_3494.webp', 'IMG_03290.webp', 'IMG_5079.webp', 'IMG_2147.webp']
+  function shuffle(list) {
+  for (let i = list.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [list[i], list[j]] = [list[j], list[i]];
+  }
+  return list;
+}
+  let images2=['IMG_9376.webp',
+ 'IMG_1630.webp',
+ 'IMG_6456.webp',
+ 'IMG_9370.webp',
+ 'IMG_8858.webp',
+ 'IMG_3412.webp',
+ 'IMG_1735.webp',
+ 'IMG_9373.webp',
+ 'IMG_1028.webp',
+ 'IMG_1027.webp',
+ 'IMG_4853.webp',
+ 'IMG_6918.webp',
+ 'IMG_E5304.webp',
+ 'IMG_4679.webp',
+ 'IMG_9372.webp',
+ 'IMG_6906.webp',
+ 'IMG_E9351.webp',
+ 'IMG_6457.webp',
+ 'IMG_1029.webp',
+ 'IMG_6919.webp']
+  const shuffledArray = shuffle(images2);
 
 </script>
 
 <div in:fly={{ duration: 300, x: 500, y: 0, opacity: 0.3, easing: quintOut }} class="grid grid-cols-1 sm:grid-cols-3 gap-4 grid-flow-dense m-4">
-    {#each images2 as image}
-      <img loading="lazy" fetchpriority="high" decoding="async" src={`work/img/beauty/${image}`} alt="Beauty" class="w-full h-auto" />
+    {#each shuffledArray as image}
+      <img loading="lazy" fetchpriority="high" decoding="async" src={`work/img/fantasy/${image}`} alt="bride" class="w-full h-auto" />
     {/each}
 </div>
