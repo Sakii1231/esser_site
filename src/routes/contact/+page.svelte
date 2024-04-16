@@ -49,7 +49,7 @@
             </div>
     
           <!-- </div> -->
-        <div style="background-image: url({img}); background-position: center; background-size: cover;" in:fly={{ duration: 300, x:0, y:300, opacity: 0.3, easing: quintOut }}>
+        <div class="hidden sm:block" style="background-image: url({img}); background-position: center; background-size: cover;" in:fly={{ duration: 300, x:0, y:300, opacity: 0.3, easing: quintOut }}>
             <div class="m-64 text-white">
                 <p class="text-4xl font-bold">Contact For All Your Beauty Needs</p>
                 <p class="my-4">Elevate your look and boost your confidence with Ruchi's expertise. Whether you're preparing for a special event or simply want to enhance your natural beauty, Ruchi is here to help. Get in touch today to schedule a consultation and discover how Ruchi can transform your look.</p>
