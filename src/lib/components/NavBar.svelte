@@ -35,10 +35,6 @@
     <ul class="hidden md:flex space-x-6">
       <li><a href="work" class="text-gray-700 text-xl font-poppins font-[300] hover:text-gray-900">Work</a></li>
       <li><a href="contact" class="text-gray-700 text-xl font-poppins font-[300] hover:text-gray-900">Contact</a></li>
-      <li>
-        <a href="#" class="text-gray-700 text-xl hover:text-gray-900">
-        </a>
-      </li>
     </ul>
   </nav>
   
@@ -47,10 +43,6 @@
       <ul class="bg-white shadow-md py-4 px-6 space-y-4">
         <li><a href="work" class="text-gray-700 text-xl font-poppins font-[300] hover:text-gray-900 block">Work</a></li>
         <li><a href="contact" class="text-gray-700 text-xl font-poppins font-[300] hover:text-gray-900 block">Contact</a></li>
-        <li>
-          <a href="#" class="text-gray-700 hover:text-gray-900 block">
-          </a>
-        </li>
       </ul>
     </div>
   {/if}
