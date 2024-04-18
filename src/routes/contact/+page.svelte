@@ -10,11 +10,11 @@
 
 
 <div class="flex justify-center items-center h-screen">
-    <div class='grid grid-cols-1 sm:grid-cols-2'>
+    <div class='grid grid-cols-1 lg:grid-cols-2 sm:grid-cols-2'>
         <div class="flex justify-center items-center h-screen">
             <div class="px-24 py-6 w-screen" in:fly={{ duration: 300, x:-300, y:0, opacity: 0.3, easing: quintOut }}>
-                <p class="text-2xl md:text-4xl font-[800] text-gray-800 mb-8">Get in touch.</p>
-                <form action="https://api.web3forms.com/submit" method="POST" class="">
+                <p class="text-xl lg:text-2xl font-[800] text-gray-800 mb-8">Get in touch.</p>
+                <form action="https://api.web3forms.com/submit" method="POST" class="text-sm lg:text-2xl">
                     <input type="hidden" name="access_key" value={PUBLIC_WEB_FORM_API}>
                     <Label for="name">Name</Label>
                     <Input type="text" id="name" name="name" required placeholder="Your name" />
@@ -49,7 +49,7 @@
             </div>
     
           <!-- </div> -->
-        <div class="hidden sm:block" style="background-image: url({img}); background-position: center; background-size: cover;" in:fly={{ duration: 300, x:0, y:300, opacity: 0.3, easing: quintOut }}>
+        <div class="hidden xl:block" style="background-image: url({img}); background-position: center; background-size: cover;" in:fly={{ duration: 300, x:0, y:300, opacity: 0.3, easing: quintOut }}>
             <div class="m-64 text-white">
                 <p class="text-4xl font-bold">Contact For All Your Beauty Needs</p>
                 <p class="my-4">Elevate your look and boost your confidence with Ruchi's expertise. Whether you're preparing for a special event or simply want to enhance your natural beauty, Ruchi is here to help. Get in touch today to schedule a consultation and discover how Ruchi can transform your look.</p>
