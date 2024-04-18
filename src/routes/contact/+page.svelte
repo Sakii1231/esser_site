@@ -13,7 +13,7 @@
     <div class='grid grid-cols-1 lg:grid-cols-2 sm:grid-cols-2'>
         <div class="flex justify-center items-center h-screen">
             <div class="px-24 py-6 w-screen" in:fly={{ duration: 300, x:-300, y:0, opacity: 0.3, easing: quintOut }}>
-                <p class="text-xl lg:text-2xl font-[800] text-gray-800 mb-8">Get in touch.</p>
+                <p class="text-2xl lg:text-4xl font-[800] text-gray-800 mb-8">Get in touch.</p>
                 <form action="https://api.web3forms.com/submit" method="POST" class="text-sm lg:text-2xl">
                     <input type="hidden" name="access_key" value={PUBLIC_WEB_FORM_API}>
                     <Label for="name">Name</Label>
@@ -23,7 +23,7 @@
                     <Label for="message">Your message</Label>
                     <Textarea placeholder="Type your message here." id="message" name="message" required />
                     <div class="mt-8">
-                        <button type="submit" class="bg-neutral-900 hover:bg-neutral-700 text-white font-bold py-2 px-4 rounded">Submit Form</button>
+                        <button type="submit" class="bg-neutral-900 hover:bg-neutral-700 text-white text-sm font-bold lg:text-lg py-2 px-4 rounded">Submit Form</button>
                     </div>
                     
                 </form>
