@@ -1,7 +1,8 @@
 <script>
-    import ImageGridFantasy from "$lib/components/ImageGridFantasy.svelte";
+    import ImageGridGridcol from "$lib/components/ImageGrid.svelte";
+    export let data
 </script>
 
 <div>
-    <ImageGridFantasy />
+    <ImageGridGridcol myFilesList={data.fileArray} imgFolder={data.imgFolder} />
 </div>

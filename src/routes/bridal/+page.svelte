@@ -1,7 +1,8 @@
 <script>
-    import ImageGridBridal from "$lib/components/ImageGridBridal.svelte";
+    import ImageGridGridcol from "$lib/components/ImageGrid.svelte";
+    export let data
 </script>
 
 <div>
-    <ImageGridBridal />
+    <ImageGridGridcol myFilesList={data.fileArray} imgFolder={data.imgFolder} />
 </div>

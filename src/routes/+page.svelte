@@ -2,7 +2,8 @@
   import img2 from '$lib/images/hero2.webp';
   import { fly } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
-  import ImageGridAll from "$lib/components/ImageGridAll.svelte";
+  import ImageGridGridcol from "$lib/components/ImageGrid.svelte";
+  export let data
 </script>
 
 <section in:fly={{ duration: 300, x: 0, y: 500, opacity: 0.5, easing: quintOut }} class="my-2 flex flex-col md:flex-row items-center justify-center py-16 px-8 md:px-16" style="background-image: url({img2}); background-position: center; background-size: cover;">
@@ -57,7 +58,7 @@
     </div>
   </div>
 </div> -->
-<ImageGridAll />
+<ImageGridGridcol myFilesList={data.fileArray} imgFolder={data.imgFolder} />
 
 
 <!-- <style>

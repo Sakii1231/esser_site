@@ -1,7 +1,8 @@
 <script>
-    import ImageGridFashion from "$lib/components/ImageGridFashion.svelte";
+    import ImageGridGridcol from "$lib/components/ImageGrid.svelte";
+    export let data
 </script>
 
 <div>
-    <ImageGridFashion />
+    <ImageGridGridcol myFilesList={data.fileArray} imgFolder={data.imgFolder} />
 </div>
